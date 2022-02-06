@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'pages/business_card.dart';
+import 'pages/row_column.dart';
 
 void main() {
   runApp(const HeroBike());
@@ -16,7 +17,7 @@ class HeroBike extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: const BusinessCard(),
+      home: const RowColumn(),
     );
   }
 }

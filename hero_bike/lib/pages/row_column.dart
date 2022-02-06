@@ -7,30 +7,10 @@ class RowColumn extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Container(
-        width: 430,
-        height: 800,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.amber,
-            ),
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.green,
-            ),
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.pink,
-            ),
-          ],
-        ),
+      body: Column(
+        children: [
+          Image.asset('photos/map@2x.png'),
+        ],
       ),
     );
   }
