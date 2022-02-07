@@ -68,8 +68,8 @@ class BusinessCard extends StatelessWidget {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Icon(Icons.home),
-                      SizedBox(width: 8),
+                      const Icon(Icons.home),
+                      const SizedBox(width: 8),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: const [

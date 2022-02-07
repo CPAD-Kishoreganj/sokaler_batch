@@ -17,8 +17,16 @@ class NewListView extends StatelessWidget {
       appBar: AppBar(
         title: const Text('list view'),
       ),
-      body: ListView.builder(
-          scrollDirection: Axis.horizontal,
+      body: SizedBox(
+        height: MediaQuery.of(context).size.height * 0.8,
+        child: ListView.separated(
+          separatorBuilder: ((context, i) {
+            return ElevatedButton(
+              onPressed: () {},
+              child: const Text('add To cart'),
+            );
+          }),
+          //scrollDirection: Axis.horizontal,
           itemCount: colors.length,
           itemBuilder: (BuildContext context, int index) {
             return Padding(
@@ -29,7 +37,9 @@ class NewListView extends StatelessWidget {
                 child: const Text("data"),
               ),
             );
-          }),
+          },
+        ),
+      ),
     );
   }
 }
