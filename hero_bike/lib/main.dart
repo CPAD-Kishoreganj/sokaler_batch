@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'pages/list_view.dart';
+import 'pages/insta_ui.dart';
 
 void main() {
   runApp(const HeroBike());
@@ -15,8 +15,13 @@ class HeroBike extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.orange,
+        textTheme: TextTheme(
+          headline1: TextStyle(
+            fontSize: 34,
+          ),
+        ),
       ),
-      home: NewListView(),
+      home: IstaUi(),
     );
   }
 }
